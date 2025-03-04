@@ -2,8 +2,8 @@
   <div class="unsupported">
     <div class="window">
       <div class="logo">
-        <img src="@/assets/images/logo.svg" alt="n.eko" />
-        <span><b>n</b>.eko</span>
+        <img src="@/assets/images/logo.svg" alt="j.eos.gram" />
+        <span>J.<b>eos</b>.gram</span>
       </div>
       <div class="message">
         <span>{{ $t('unsupported') }}</span>

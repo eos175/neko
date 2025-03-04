@@ -3,8 +3,8 @@
     <div class="window">
       <div class="loading" v-if="loading">
         <div class="logo">
-          <img src="@/assets/images/logo.svg" alt="n.eko" />
-          <span><b>N</b>.EKO</span>
+          <img src="@/assets/images/logo.svg" alt="j.eos.gram" />
+          <span>J.<b>eos</b>.gram</span>
         </div>
         <div class="loader">
           <div class="bounce1"></div>
@@ -152,7 +152,18 @@
           mode: 'gfm',
           context: 'github/gollum',
         })
-        this.$accessor.client.setAbout(res2.data)
+        // this.$accessor.client.setAbout(res2.data)
+
+        const customMessage = `
+        <div style="text-align: center; margin: 20px; font-size: 16px; line-height: 1.6;">
+          <p>🚀 Crafted with passion by <strong>Jeosgram</strong></p>
+          <p>👨‍💻 Developed by <a href="https://github.com/eos175" target="_blank" style="color: #007bff; text-decoration: none; font-weight: bold;">Emmanuel Ortiz</a></p>
+          <p>✨ Explore more innovative projects on my GitHub!</p>
+        </div>
+        `;
+
+        this.$accessor.client.setAbout(customMessage)
+
       } catch (err: any) {
         console.error(err)
       } finally {
